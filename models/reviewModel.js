@@ -41,9 +41,7 @@ reviewSchema.pre(/^find/, function (next) {
   //   path: 'tour',
   //   select: 'name photo',
   // });
-
   this.populate({ path: 'user', select: '-__v -passwordChangedAt' });
-
   next();
 });
 
