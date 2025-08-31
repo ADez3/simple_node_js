@@ -110,3 +110,9 @@ exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
     date: { plan },
   });
 });
+
+//   '/tours-within/:distance/center/:latlng/unit/:unit'
+
+exports.getToursWithin = (req, res, next) => {
+  const { distance, latlng, unit} = req.params;
+};
